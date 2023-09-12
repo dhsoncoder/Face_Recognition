@@ -18,3 +18,5 @@ Khó khăn:
 - Điều kiện môi trường, chất lượng ánh sáng, chất lượng camera
 - Sự xuất hiện hoặc thiếu thành phần khuôn mặt như kính, mũ, râu,...
 - Cấu hình máy không đáp ứng đủ để chạy tốt chương trình
+
+Video demo: https://youtu.be/Jv63dwwb-kM
