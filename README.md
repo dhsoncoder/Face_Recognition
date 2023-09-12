@@ -3,8 +3,7 @@ A basic program that uses OpenCV to detect and recognize human faces
 
 Ý tưởng:
 - Nhận diện gương mặt thông qua 2 giai đoạn
-- Giai đoạn 1: Phát hiện khuôn mặt. Tức là phải sử dụng một thuật toán để nhận dạng ra khuôn mặt đang nằm ở vị trí nào trên màn hình, từ đó khoanh vùng để bước tới khâu tiếp theo là nhận diện gương mặt.
-Em lựa chọn thuật toán Viola-Jones, chính xác hơn thì là một biến thể của nó, đó là Haar Cascade vì nó dễ sử dụng và có sẵn các hàm hỗ trợ trong OpenCV.
+- Giai đoạn 1: Phát hiện khuôn mặt. Tức là phải sử dụng một thuật toán để nhận dạng ra khuôn mặt đang nằm ở vị trí nào trên màn hình, từ đó khoanh vùng để bước tới khâu tiếp theo là nhận diện gương mặt. Ở đây ta sử dụng dlib đã có sẵn để làm điều này.
 - Giai đoạn 2: Nhận dạng gương mặt. Nguyên lý hoạt động của việc nhận dạng gương mặt trong chương trình này là mã hóa hình ảnh và biểu diễn nó dưới dạng vector số học, sau đó so sánh với danh sách vector các gương mặt đã được mã hóa từ trước(gọi là dataset). Nếu như kết quả trả về nằm trong phạm vi sai số cho phép thì tên của người nhận dạng sẽ được hiện lên và ngược lại sẽ thông báo không nhận dạng được.
 
 Thuận lợi:
