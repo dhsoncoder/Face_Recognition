@@ -31,7 +31,7 @@ def encode(images):
 encodedList = encode(images)
 
 # So sánh mặt
-def recognize_face(encode_list_known, encode_face):
+def recognize_face(encodedList, encodeFace):
     name = "Unknown"
     faceDis = face_recognition.face_distance(encodedList, encodeFace)
     print(faceDis)
@@ -43,7 +43,7 @@ def recognize_face(encode_list_known, encode_face):
 
 
 # Khởi tạo camera
-camera = cv2.VideoCapture(0)  # 0 là thiết bị mặc định (camera webcam)
+camera = cv2.VideoCapture("ronaldo.mp4")  # 0 là thiết bị mặc định (camera webcam)
 
 while True:
     temp, frame = camera.read()
