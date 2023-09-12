@@ -60,8 +60,7 @@ while True:
         cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 255, 0), 2)
         
         if encodecurrentFrame:  # Kiểm tra nếu có khuôn mặt được mã hóa
-            # encodeFace = encodecurrentFrame[0]
-            # matches = face_recognition.compare_faces(encodedList, encodeFace)
+           
             cv2.putText(frame, recognize_face(encodedList,encodeFace), (x2, y2), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
     
     cv2.imshow("Face Reg", frame)
