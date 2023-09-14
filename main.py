@@ -36,7 +36,7 @@ def recognize_face(encodedList, encodeFace):
     faceDis = face_recognition.face_distance(encodedList, encodeFace)
     print(faceDis)
     matched = np.argmin(faceDis)
-    if faceDis[matched] < 0.55: # giá trị tăng giảm tùy thuộc
+    if faceDis[matched] < 0.5: # giá trị tăng giảm tùy thuộc
         name = labels[matched]
     
     return name
