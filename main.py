@@ -43,7 +43,7 @@ def recognize_face(encodedList, encodeFace):
 
 
 # Khởi tạo camera
-camera = cv2.VideoCapture(0)  # 0 là thiết bị mặc định (camera webcam)
+camera = cv2.VideoCapture('ronaldo.mp4')  # 0 là thiết bị mặc định (camera webcam)
 
 while True:
     temp, frame = camera.read()
